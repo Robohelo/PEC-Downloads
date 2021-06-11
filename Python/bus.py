@@ -150,7 +150,7 @@ class OneWireBus:
         return self._ow.read_byte()
 
     def _writebyte(self, value):
-        return self._ow.write_byte()
+        return self._ow.write_byte(value)
 
     def _search_rom(self, l_rom, diff):
         if not self.reset():
